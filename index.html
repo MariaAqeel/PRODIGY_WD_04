@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Maria Aqeel, a student at Habib University.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Maria, and I am a passionate and dedicated student. With a strong background in computer science, I thrive on turning innovative ideas into reality. My expertise lies in  web development and I have successfully made several successful projects. I am always eager to learn and grow, and I enjoy collaborating with others to create impactful and meaningful work.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>image similarity recognition</h3>
+            <p>This project uses KD tree data structure to create a similar color image recommendation system. Rather than recommending images based on content, our system focuses on color similarity. Users can select an image, and the program returns visually similar color images, including the query image itself. 
+
+              We curated a dataset of 226 images from various sources, ensuring diverse color representation. Using KD trees, we derived essential metrics like hue, saturation, and value (lightness/darkness) of each image to deliver precise matches based on user queries.
+              
+              Additionally, the program integrates functionalities for users to insert, delete, and retrieve similar images using nearest neighbor search, providing a dynamic and interactive experience. To enhance accessibility, we designed a user-friendly GUI using the TKINTER library..</p>
+        </div>
+        <div class="project">
+            <h3>weather app</h3>
+            <p>using API developed a weather app which would tell the temperature, humidity, and wind speed once you enter a valid city name or gives an error message if the city name is invalid</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 maria. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
